@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="../images/site-icon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reviews | ClickMenu</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/review-page.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <a class="logo-cont" href="../Pages/Home.html"><img class="logo" src="../images/logo.png" alt="ClickMenu-Logo"></a>
+            <a class="home-link" href="../Pages/Home.html"><p>ClickMenu</p></a>
+            <nav>
+                <ul>
+                    <li><a href="../Pages/Home.html">Home</a></li>
+                    <li><a href="../Pages/Menu.html">Menu</a></li>
+                    <li><a href="../Pages/Reservation.html">Reservation</a></li>
+                    <li class="submenu"><a href="../Pages/Orders.html">Orders</a></li>
+                    <li class="submenu"><a href="../Pages/Reviews.html">Reviews</a></li>
+                </ul>
+                <div class="user">
+                    <img src="../images/user-profiles/main-profile.jpg" alt="user-profile" class="profile">
+                </div>
+                <div class="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="logout-cont">
+                <button class="logout-btn">Logout</button>
+            </div>
+            <div class="backdrop-menu">
+                <ul>
+                    <li class="link"><a href="../Pages/Home.html">Home</a></li>
+                    <li class="link"><a href="../Pages/Menu.html">Menu</a></li>
+                    <li class="link"><a href="../Pages/Reservation.html">Reservation</a></li>
+                    <li class="submenu"><a href="../Pages/Orders.html">Orders</a></li>
+                    <li class="submenu"><a href="../Pages/Reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <form action="#" class="user-review">
+                    <div class="row top-section">
+                        <div class="myreview">
+                            <div class="user-profile-cont">
+                                <img class="user-profile" src="../images/user-profiles/main-profile.jpg" alt="User Profile">
+                            </div>
+                            <div class="user">
+                                <p class="username">Railey Dela Peña</p>
+                                <p class="order">Order: 
+                                    <span class="user-order">
+                                        <select name="yourOrder" id="order-selector" required>
+                                            <option value="1">Pork Sinigang</option>
+                                            <option value="2">Beef Kaldereta</option>
+                                            <option value="3">Beef Bulalo</option>
+                                            <option value="4">Beef Steak</option>
+                                            <option value="5">Pinakbet</option>
+                                            <option value="6">Bicol Express</option>
+                                            <option value="7">Pork Kare-kare</option>
+                                            <option value="8">Sisig</option>
+                                            <option value="9">Menudo</option>
+                                        </select>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="rate">
+                                <div class="dish-quality">
+                                    <p>Dish Quality</p>
+                                    <div class="rating-dq">
+                                        <input type="number" name="rating" hidden>
+                                        <i class='bx bx-star star'></i>
+                                        <i class='bx bx-star star'></i>
+                                        <i class='bx bx-star star'></i>
+                                        <i class='bx bx-star star'></i>
+                                        <i class='bx bx-star star'></i>
+                                    </div>
+                                </div>
+                                <div class="seller-service">
+                                    <p>Seller Service</p>
+                                    <div class="rating-ss">
+                                        <input type="number" name="rating" hidden>
+                                        <i class='bx bx-star star'></i>
+                                        <i class='bx bx-star star'></i>
+                                        <i class='bx bx-star star'></i>
+                                        <i class='bx bx-star star'></i>
+                                        <i class='bx bx-star star'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row textarea-cont">
+                            <div class="col-md-12">
+                                <textarea cols="30" rows="10" placeholder="Share your thoughts" style="resize: none;"></textarea>
+                            </div>
+                        </div>
+                        <div class="button-cont">
+                            <div class="buttons">
+                                <button class="cancel-btn" type="button">Cancel</button>
+                                <button class="submit-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="users-review">
+                    <div class="row customer-review">
+                        <div class="row top-section">
+                            <div class="c-review">
+                                <div class="customer-profile-cont">
+                                    <img class="customer-profile" src="../images/user-profiles/profile1.jpg" alt="Customer's Profile">
+                                </div>
+                                <div class="customer">
+                                    <p class="customer-name">Kap. Niño Barzaga</p>
+                                    <p class="customer-order">Order: <span>Beef Kaldereta</span></p>
+                                </div>
+                                <div class="rate">
+                                    <div class="dish-quality">
+                                        <p>Dish Quality</p>
+                                        <div class="users-rate dishQuality">
+                                            <input type="number" name="rating" hidden>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                        </div>
+                                    </div>
+                                    <div class="seller-service">
+                                        <p>Seller Service</p>
+                                        <div class="users-rate sellerService">
+                                            <input type="number" name="rating" hidden>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row review-section">
+                            <div class="review-txt-cont">
+                                <p class="review">The food at this restaurant is incredibly delicious! <br> The chicken adobo is packed with flavor, and I'll definitely be returning for their Kare-kare.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row customer-review">
+                        <div class="row top-section">
+                            <div class="c-review">
+                                <div class="customer-profile-cont">
+                                    <img class="customer-profile" src="../images/user-profiles/profile3.jpg" alt="Customer's Profile">
+                                </div>
+                                <div class="customer">
+                                    <p class="customer-name">Dasha</p>
+                                    <p class="customer-order">Order: <span>Sisig</span></p>
+                                </div>
+                                <div class="rate">
+                                    <div class="dish-quality">
+                                        <p>Dish Quality</p>
+                                        <div class="users-rate dishQuality">
+                                            <input type="number" name="rating" hidden>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                        </div>
+                                    </div>
+                                    <div class="seller-service">
+                                        <p>Seller Service</p>
+                                        <div class="users-rate sellerService">
+                                            <input type="number" name="rating" hidden>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row review-section">
+                            <div class="review-txt-cont">
+                                <p class="review">Wow, I just tried the Sisig from this place, and my taste buds are doing a happy dance! The Sisig was like a flavor explosion in my mouth, with the perfect blend of spices and tender beef. And don't even get me started on the Beef Steak – it's like they've masterd the art of making steak so juicy and succulent. Definitely coming back for more culinary delights!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row customer-review">
+                        <div class="row top-section">
+                            <div class="c-review">
+                                <div class="customer-profile-cont">
+                                    <img class="customer-profile" src="../images/user-profiles/profile2.jpg" alt="Customer's Profile">
+                                </div>
+                                <div class="customer">
+                                    <p class="customer-name">Carlos Agassi</p>
+                                    <p class="customer-order">Order: <span>Pinakbet</span></p>
+                                </div>
+                                <div class="rate">
+                                    <div class="dish-quality">
+                                        <p>Dish Quality</p>
+                                        <div class="users-rate dishQuality">
+                                            <input type="number" name="rating" hidden>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                        </div>
+                                    </div>
+                                    <div class="seller-service">
+                                        <p>Seller Service</p>
+                                        <div class="users-rate sellerService">
+                                            <input type="number" name="rating" hidden>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                            <i class='bx bxs-star star'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row review-section">
+                            <div class="review-txt-cont">
+                                <p class="review">you're the laman 😋 of my passenger seat💺empty road🛣️4-seater😱para we have space🚀 sa back let's make sulit🥰the hamog💨 it will serve as our taklob😶‍🌫️ wishing 🙏 na hindi ma-caught 🧐 inside ng aking BMW🚨sedan 🚗</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <div class="footer-cont">
+                <div class="contact">
+                    <p class="top-text">Contact Us:</p>
+                    <div class="contact-links">
+                        <a class="link" href=""><img class="link-img" src="../images/fb-logo.png" alt=""></a>
+                        <a class="link" href=""><img class="link-img" src="../images/twitter-logo.png" alt=""></a>
+                        <a class="link" href=""><img class="link-img" src="../images/ig-logo.png" alt=""></a>
+                        <a class="link" href=""><img class="link-img" src="../images/tg-logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="opening-hours">
+                    <p class="top-text">Opening Hours</p>
+                    <hr size="5" color="black" width="330px" align="left">
+                    <div class="day">
+                        <p>Monday</p>
+                        <p>Tuesday</p>
+                        <p>Wednesday</p>
+                        <p>Thursday</p>
+                        <p>Friday</p>
+                    </div>
+                    <div class="time">
+                        <p>10:00am-08:00pm</p>
+                        <p>10:00am-08:30pm</p>
+                        <p>09:00am-07:00pm</p>
+                        <p>10:00am-07:00pm</p>
+                        <p>09:00am-08:00pm</p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <p class="top-text">Menu</p>
+                    <hr size="5" color="black" width="240px" align="left">
+                    <div class="menus">
+                        <p><a href="Home.html">Home</a></p>
+                        <p><a href="Menu.html">Menu</a></p>
+                        <p><a href="Reservation.html">Reservation</a></p>
+                        <p><a href="Orders.html">Orders</a></p>
+                        <p><a href="Reviews.html">Reviews</a></p>
+                    </div>
+                </div>
+                <div class="address-cont">
+                    <p class="top-text">Address</p>
+                    <hr size="5" color="black" width="240px" align="left">
+                    <div class="address">
+                        <p>1234 Street Name</p>
+                        <p>Calamba City, Laguna</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/reviews.js"></script>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,240 @@
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fcffe7;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 2px 0 5px 3px #000;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 999;
+}
+.user .profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.logout-cont{
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 90px;
+    background-image: linear-gradient(to bottom, #fcffe7, #fcffe755);
+    backdrop-filter: blur(5px);
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 5px 3px #000000a5;
+    text-align: center;
+    padding: 10px 0;
+}
+.clicked{
+    display: block;
+}
+.logout-btn{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    height: 30px;
+    background-color: #e05c04;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+.logout-btn:hover{
+    background-color: #dea057;
+    box-shadow: 0 2px 3px 1px #00000082;
+}
+.logout-btn:active{
+    background-color: #c55a11;
+}
+.hamburger-menu{
+    display: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.bar{
+    display: block;
+    width: 32px;
+    height: 6px;
+    margin: 4px auto;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #dea057;
+}
+.logo-cont{
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.home-link{
+    text-decoration: none;
+    margin-left: 20px;
+    animation: color-changer 2s ease-in-out infinite;
+}
+@keyframes color-changer {
+    0% { color: #e05c04; }
+    25% { color: #dea057; }
+    50% { color: #f4972d; }
+    75% { color: #b46204; }
+    100% { color: #8f612c; }
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav *{
+    display: inline-block;
+    vertical-align: middle;
+}
+nav ul{
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+ul li a{
+    text-decoration: none;
+    color: #c55a11;
+    transition: all 0.1s ease;
+}
+ul li a:hover{
+    color: #ca6d30;
+}
+.backdrop-menu{
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 400px;
+    background-image: linear-gradient(to bottom, #fcffe7, #fcffe755);
+    backdrop-filter: blur(5px);
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 5px 3px #000000a5;
+}
+.backdrop-menu ul{
+    padding: 0;
+}
+.backdrop-menu li{
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .1s ease;
+}
+.backdrop-menu li a:hover{
+    color: #9f6945;
+    font-size: 50px;
+    transition: all 0.3s ease;
+}
+.backdrop-menu .submenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 1200px){
+    header{
+        padding: 0 25px;
+    }
+    nav ul li{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 1075px){
+    .hamburger-menu, nav ul{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .hamburger-menu.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger-menu.active .bar:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+    .hamburger-menu.active .bar:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    .submenu{
+        display: none;
+    }
+    .backdrop-menu.active{
+        display: block;
+    }
+    .backdrop-menu .link{
+        display: none;
+    }
+    .logout-cont{
+        right: 60px;
+        border-radius: 0 0 10px 10px;
+    }
+}
+@media (max-width: 769px){
+    nav ul{
+        display: none;
+    }
+    .logo, .logo-cont{
+        display: flex;
+        width: 55px;
+        height: 55px;
+    }
+    .home-link{
+        font-size: 23px;
+    }
+    .backdrop-menu{
+        width: 100%;
+        border-radius: 0;
+        top: 60px;
+    }
+    .backdrop-menu .link{
+        display: flex;
+    }
+    .logout-btn{
+        font-size: 12px;
+        height: 26px;
+    }
+}
+@media (max-width: 426px){
+    header{
+        height: 70px;
+    }
+    .logo, .logo-cont{
+        width: 40px;
+        height: 40px;
+    }
+    .home-link{
+        font-size: 16px;
+    }
+    .hamburger-menu{
+        width: 30px;
+    }
+    .backdrop-menu{
+        top: 70px;
+    }
+    .logout-cont{
+        top: 70px;
+    }
+}
+@media (max-width: 376px){
+    .home-link, .logo-cont{
+        display: flex;
+    }
+}

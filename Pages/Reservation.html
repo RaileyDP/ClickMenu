@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="../images/site-icon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reservation | ClickMenu</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/reservation-page.css">
+    </head>
+    <body>
+        <header>
+            <a class="logo-cont" href="../Pages/Home.html"><img class="logo" src="../images/logo.png" alt="ClickMenu-Logo"></a>
+            <a class="home-link" href="../Pages/Home.html"><p>ClickMenu</p></a>
+            <nav>
+                <ul>
+                    <li><a href="../Pages/Home.html">Home</a></li>
+                    <li><a href="../Pages/Menu.html">Menu</a></li>
+                    <li><a href="../Pages/Reservation.html">Reservation</a></li>
+                    <li><a href="../Pages/Orders.html">Orders</a></li>
+                    <li class="submenu"><a href="../Pages/Reviews.html">Reviews</a></li>
+                </ul>
+                <div class="user">
+                    <img src="../images/user-profiles/main-profile.jpg" alt="user-profile" class="profile">
+                </div>
+                <div class="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="logout-cont">
+                <button class="logout-btn">Logout</button>
+            </div>
+            <div class="backdrop-menu">
+                <ul>
+                    <li class="link"><a href="../Pages/Home.html">Home</a></li>
+                    <li class="link"><a href="../Pages/Menu.html">Menu</a></li>
+                    <li class="link"><a href="../Pages/Reservation.html">Reservation</a></li>
+                    <li class="submenu"><a href="../Pages/Orders.html">Orders</a></li>
+                    <li class="submenu"><a href="../Pages/Reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="orders" id="orders">
+                <div class="top-section">
+                    <p class="product">Product</p>
+                    <p class="price">Price</p>
+                    <p class="quantity">Quantity</p>
+                    <p class="total">Total Price</p>
+                    <p class="action">Action</p>
+                </div>
+                <div class="order-list" id="order-list"></div>
+                <!--<div class="order">
+                    <div class="left-section">
+                        <div class="checkbox">
+                            <input class="check" type="checkbox">
+                        </div>
+                        <div class="order-pic">
+                            <img src="../images/dishes/beef-steak.png" alt="Beef Steak Photo">
+                        </div>
+                        <div class="order-name">
+                            <p>Beef Steak</p>
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        <div class="order-price">
+                            <p>₱ 250</p>
+                        </div>
+                        <div class="order-quantity">
+                            <button class="minus">-</button>
+                            <p class="qty"></p>
+                            <button class="plus">+</button>
+                        </div>
+                        <div class="order-totalPrice">
+                            <p>₱ 250</p>
+                        </div>
+                        <div class="order-action">
+                            <p>Delete</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order">
+                    <div class="left-section">
+                        <div class="checkbox">
+                            <input class="check" type="checkbox">
+                        </div>
+                        <div class="order-pic">
+                            <img src="../images/dishes/beef-bulalo.png" alt="Beef Bulalo Photo">
+                        </div>
+                        <div class="order-name">
+                            <p>Beef Bulalo</p>
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        <div class="order-price">
+                            <p>₱ 300</p>
+                        </div>
+                        <div class="order-quantity">
+                            <button class="minus">-</button>
+                            <input class="qty" type="number" value="2" min="1" max="10">
+                            <button class="plus">+</button>
+                        </div>
+                        <div class="order-totalPrice">
+                            <p>₱ 600</p>
+                        </div>
+                        <div class="order-action">
+                            <p>Delete</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order">
+                    <div class="left-section">
+                        <div class="checkbox">
+                            <input class="check" type="checkbox">
+                        </div>
+                        <div class="order-pic">
+                            <img src="../images/dishes/sisig.png" alt="Sisig Photo">
+                        </div>
+                        <div class="order-name">
+                            <p>Sisig</p>
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        <div class="order-price">
+                            <p>₱ 150</p>
+                        </div>
+                        <div class="order-quantity">
+                            <button class="minus">-</button>
+                            <input class="qty" type="number" value="1" min="1" max="10">
+                            <button class="plus">+</button>
+                        </div>
+                        <div class="order-totalPrice">
+                            <p>₱ 150</p>
+                        </div>
+                        <div class="order-action">
+                            <p>Delete</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order">
+                    <div class="left-section">
+                        <div class="checkbox">
+                            <input class="check" type="checkbox">
+                        </div>
+                        <div class="order-pic">
+                            <img src="../images/dishes/pork-karekare.png" alt="Pork Kare-kare Photo">
+                        </div>
+                        <div class="order-name">
+                            <p>Pork Kare-kare</p>
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        <div class="order-price">
+                            <p>₱ 300</p>
+                        </div>
+                        <div class="order-quantity">
+                            <button class="minus">-</button>
+                            <input class="qty" type="number" value="1" min="1" max="10">
+                            <button class="plus">+</button>
+                        </div>
+                        <div class="order-totalPrice">
+                            <p>₱ 300</p>
+                        </div>
+                        <div class="order-action">
+                            <p>Delete</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order">
+                    <div class="left-section">
+                        <div class="checkbox">
+                            <input class="check" type="checkbox">
+                        </div>
+                        <div class="order-pic">
+                            <img src="../images/dishes/menudo.png" alt="Menudo Photo">
+                        </div>
+                        <div class="order-name">
+                            <p>Menudo</p>
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        <div class="order-price">
+                            <p>₱ 200</p>
+                        </div>
+                        <div class="order-quantity">
+                            <button class="minus">-</button>
+                            <input class="qty" type="number" value="1" min="1" max="10">
+                            <button class="plus">+</button>
+                        </div>
+                        <div class="order-totalPrice">
+                            <p>₱ 200</p>
+                        </div>
+                        <div class="order-action">
+                            <p>Delete</p>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="checkout">
+                    <div class="selector">
+                        <input type="checkbox">
+                    </div>
+                    <div class="selectAll-txt">
+                        <p>Select All</p>
+                    </div>
+                    <div class="total-txt">
+                        <p>Total:</p>
+                    </div>
+                    <div class="totalPrice-txt">
+                        <p>₱ 0</p>
+                    </div>
+                    <div class="checkout-btn-div">
+                        <button class="checkout-btn" id="checkout-btn" onclick="displayCheckoutContainer()">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="../js/reservation.js"></script>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
